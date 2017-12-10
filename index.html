@@ -20,6 +20,16 @@
     padding: 0;
   }
 
+  img {
+    object-fit: cover;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+
   th {
     text-align: left;
   }
@@ -31,11 +41,15 @@
   </style>
   <style>
   .blue {
-    color: blue;
+    color: #1164b3;
+  }
+
+  .grey {
+    color: gray;
   }
 
   .table-title {
-    color: red;
+    color: #d04d56;
     font-size: 20px;
     margin: 8px 0;
     font-weight: 400;
@@ -86,6 +100,11 @@
     color: blue;
   }
 
+  table.vertical-list .title {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
   table.vertical-list img {
     height: 70px;
     margin-right: 14px;
@@ -108,6 +127,10 @@
     padding-bottom: 0;
   }
 
+  table.more-on-carwale {
+    width: 100%;
+  }
+
   table.more-on-carwale td {
     padding: 6px 12px;
   }
@@ -123,12 +146,11 @@
     table-layout: fixed;
     width: 100%;
     border: 4px solid black;
-    color: #666;
     margin: 14px 0px;
   }
 
   .footer-content {
-    padding: 22px 16px;
+    padding: 22px 8px;
     text-align: center;
   }
 
@@ -142,10 +164,48 @@
     text-align: center;
   }
 
+  .footer-content img.phone {
+    margin-right: 10px;
+  }
+
+  .footer-content span.time {
+    margin-left: 45px;
+  }
+
+  .disclaimer {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 14px;
+  }
+
+  .super-wrapper {
+    width: 100%;
+    max-width: 628px;
+    margin: 10px auto;
+    font-size: 9px;
+        font-weight: bold;
+  }
+
+  .super-wrapper table {
+    width: 100%;
+  }
+
+  .super-wrapper .date {
+    text-align: right;
+  }
+
   </style>
 </head>
 
 <body style="margin: 0; font-family: 'Open Sans', sans-serif; width: 100%; background: #efefef;">
+  <div class="super-wrapper">
+    <table>
+      <tr>
+        <td class="browser"><a class="blue" href="#">Click here</a> to view in your browser</td>
+        <td class="date">4 Apr 2017</td>
+      </tr>
+    </table>
+  </div>
   <div class="layout-wrapper">
     <table>
       <tr>
@@ -156,37 +216,45 @@
         <td>
           <table cellspacing="0" class="top-stories vertical-list ">
             <tr>
-              <td><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td>
+              <td><a href="#">
+                <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg"></a>
+              </td>
               <td>
-                <div class="nutshell-content-wrapper ">
-                  <h4 class="title blue ">7 car launches in India in April 2017</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
-                </div>
+                <a href="#">
+                  <div class="nutshell-content-wrapper ">
+                    <h4 class="title blue ">7 car launches in India in April 2017</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
+                  </div>
+                </a>
               </td>
             </tr>
             <tr>
-              <td><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td>
-              <td>
-                <div class="nutshell-content-wrapper ">
-                  <h4 class="title blue ">7 car launches in India in April 2017</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
-                </div>
-              </td>
+              <td><a href="#"><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td></a>
+                <td>
+                  <a href="#">
+                    <div class="nutshell-content-wrapper ">
+                      <h4 class="title blue ">7 car launches in India in April 2017</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
+                    </div>
+                  </a>
+                </td>
             </tr>
             <tr class="last ">
-              <td><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td>
-              <td>
-                <div class="nutshell-content-wrapper ">
-                  <h4 class="title blue ">7 car launches in India in April 2017</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
-                </div>
-              </td>
+              <td><a href="#"><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td></a>
+                <td>
+                  <a href="#">
+                    <div class="nutshell-content-wrapper ">
+                      <h4 class="title blue ">7 car launches in India in April 2017</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
+                    </div>
+                  </a>
+                </td>
             </tr>
             <tr>
               <td colspan="2 "><a class="blue " href="# ">More on CarWale News</a></td>
             </tr>
           </table>
-        </td>
+          </td>
       </tr>
       <tr>
         <td>
@@ -197,33 +265,42 @@
           <table class="upcoming-cars ">
             <tr>
               <td>
-                <div class="car-wrapper ">
-                  <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-upcoming-car11.jpg " alt=" ">
-                  <h4 class="title ">Audi A3 Facelift</h4>
-                  <div class="date-price ">
-                    <span>6 APR 2017</span>
-                    <span>$ 27 - 29 lakh approx</span>
-                  </div>
+                <div class="car-wrapper">
+                  <a href="#">
+                    <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-upcoming-car11.jpg " alt=" ">
+                    <h4 class="title ">Audi A3 Facelift</h4>
+                    <div class="date-price ">
+                      <span>6 APR 2017</span>
+                      <br>
+                      <span>$ 27 - 29 lakh approx</span>
+                    </div>
+                  </a>
                 </div>
               </td>
               <td>
-                <div class="car-wrapper ">
-                  <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-upcoming-car12.jpg " alt=" ">
-                  <h4 class="title ">Audi A3 Facelift</h4>
-                  <div class="date-price ">
-                    <span>6 APR 2017</span>
-                    <span>$ 27 - 29 lakh approx</span>
-                  </div>
+                <div class="car-wrapper">
+                  <a href="#">
+                    <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-upcoming-car12.jpg " alt=" ">
+                    <h4 class="title ">Audi A3 Facelift</h4>
+                    <div class="date-price ">
+                      <span>6 APR 2017</span>
+                      <br>
+                      <span>$ 27 - 29 lakh approx</span>
+                    </div>
+                  </a>
                 </div>
               </td>
               <td>
-                <div class="car-wrapper ">
-                  <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-upcoming-car14.jpg " alt=" ">
-                  <h4 class="title ">Audi A3 Facelift</h4>
-                  <div class="date-price ">
-                    <span>6 APR 2017</span>
-                    <span>$ 27 - 29 lakh approx</span>
-                  </div>
+                <div class="car-wrapper">
+                  <a href="#">
+                    <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-upcoming-car14.jpg " alt=" ">
+                    <h4 class="title ">Audi A3 Facelift</h4>
+                    <div class="date-price ">
+                      <span>6 APR 2017</span>
+                      <br>
+                      <span>$ 27 - 29 lakh approx</span>
+                    </div>
+                  </a>
                 </div>
               </td>
             </tr>
@@ -239,16 +316,20 @@
           <table class="expert-reviews ">
             <tr>
               <td>
-                <div class="image-wrapper ">
-                  <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-this-week-review-pic1.jpg " alt=" ">
-                  <p>2017 Mercedes-Benz E345 LWB Road Test Review</p>
-                </div>
+                <a href="#">
+                  <div class="image-wrapper ">
+                    <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-this-week-review-pic1.jpg " alt=" ">
+                    <p>2017 Mercedes-Benz E345 LWB Road Test Review</p>
+                  </div>
+                </a>
               </td>
               <td>
-                <div class="image-wrapper ">
-                  <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-this-week-review-pic2.jpg " alt=" ">
-                  <p>2017 Mercedes-Benz E345 LWB Road Test Review</p>
-                </div>
+                <a href="#">
+                  <div class="image-wrapper ">
+                    <img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-this-week-review-pic2.jpg " alt=" ">
+                    <p>2017 Mercedes-Benz E345 LWB Road Test Review</p>
+                  </div>
+                </a>
               </td>
             </tr>
           </table>
@@ -262,55 +343,65 @@
         <td>
           <table class="nutshell vertical-list ">
             <tr>
-              <td><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td>
-              <td>
-                <div class="nutshell-content-wrapper ">
-                  <h4 class="title blue ">7 car launches in India in April 2017</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
-                </div>
-              </td>
+              <td><a href="#"><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg" alt=" "></td></a>
+                <td>
+                  <a href="#">
+                    <div class="nutshell-content-wrapper ">
+                      <h4 class="title blue ">7 car launches in India in April 2017</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
+                    </div>
+                  </a>
+                </td>
             </tr>
             <tr>
-              <td><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td>
-              <td>
-                <div class="nutshell-content-wrapper ">
-                  <h4 class="title blue ">7 car launches in India in April 2017</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
-                </div>
-              </td>
+              <td><a href="#"><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick2.jpg" alt=" "></td></a>
+                <td>
+                  <a href="#">
+                    <div class="nutshell-content-wrapper ">
+                      <h4 class="title blue ">7 car launches in India in April 2017</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
+                    </div>
+                  </a>
+                </td>
             </tr>
             <tr>
-              <td><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td>
-              <td>
-                <div class="nutshell-content-wrapper ">
-                  <h4 class="title blue ">7 car launches in India in April 2017</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
-                </div>
-              </td>
+              <td><a href="#"><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick3.jpg" alt=" "></td></a>
+                <td>
+                  <a href="#">
+                    <div class="nutshell-content-wrapper ">
+                      <h4 class="title blue ">7 car launches in India in April 2017</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
+                    </div>
+                  </a>
+                </td>
             </tr>
             <tr>
-              <td><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td>
-              <td>
-                <div class="nutshell-content-wrapper ">
-                  <h4 class="title blue ">7 car launches in India in April 2017</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
-                </div>
-              </td>
+              <td><a href="#"><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick4.jpg" alt=" "></td></a>
+                <td>
+                  <a href="#">
+                    <div class="nutshell-content-wrapper ">
+                      <h4 class="title blue ">7 car launches in India in April 2017</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
+                    </div>
+                  </a>
+                </td>
             </tr>
             <tr class="last ">
-              <td><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick1.jpg " alt=" "></td>
-              <td>
-                <div class="nutshell-content-wrapper ">
-                  <h4 class="title blue ">7 car launches in India in April 2017</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
-                </div>
-              </td>
+              <td><a href="#"><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-Nutshell-pick5.jpg" alt=" "></td></a>
+                <td>
+                  <a href="#">
+                    <div class="nutshell-content-wrapper ">
+                      <h4 class="title blue ">7 car launches in India in April 2017</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore corporis quos expedita quo at esse. <span class="blue ">More >></span></p>
+                    </div>
+                  </a>
+                </td>
             </tr>
             <tr>
-              <td colspan="2 "><a href="# ">More on CarWale News</a></td>
+              <td colspan="2 "><a class="blue" href="# ">More on CarWale News</a></td>
             </tr>
           </table>
-        </td>
+          </td>
       </tr>
       <tr>
         <td>
@@ -339,7 +430,7 @@
       </tr>
       <tr>
         <td>
-          <table class="footer ">
+          <table class="footer grey">
             <tr>
               <th class="footer-title ">
                 <h4 class="title ">CALL US TOLL-FREE</h4></th>
@@ -351,7 +442,8 @@
             <tr>
               <td>
                 <div class="footer-content ">
-                  <p><img src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-phone-icon.png " alt=" "><span>1800-2090-230</span><br>
+                  <p><img class="phone" src="https://raw.githubusercontent.com/shalinigandhi/assignment02_newsletter/master/assets/newsletter-phone-icon.png " alt=" "><span>1800-2090-230</span>
+                    <br>
                     <span class="time ">8am-8pm Mon-Sat</span>
                   </p>
                 </div>
@@ -380,8 +472,8 @@
       </tr>
       <tr>
         <td>
-          <p style="text-align: center;font-size: 10px; margin-bottom: 14px; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, reprehenderit!
-            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, culpa laboriosam. Consequatur, vero, molestias!</p>
+          <p class="grey disclaimer">We bring the best of the auto industry to your inbox.
+            <br>If you no longer wish to receive emails from CarWale, please <a class="blue" href="#">unsubscribe here</a></p>
         </td>
       </tr>
     </table>
